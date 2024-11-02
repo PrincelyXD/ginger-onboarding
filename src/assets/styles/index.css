@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: "Merchant";
+      font-display: swap;
+      src: url(/merchant-fonts/Merchant-SemiBold.woff2) format("woff2");
+    }
+  }
