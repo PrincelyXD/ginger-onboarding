@@ -69,9 +69,9 @@ const PasswordInput = ({
     </div>
 
     <div className=" text-[#6E6E6E] text-[13px]">
-        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> {value.length >= 8? <Checked/>: <Unchecked/>} Minimum of 8 characters</span>
-        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> {hasUppercase(value)? <Checked/>: <Unchecked/>} One UPPERCASE character</span>
-        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> { hasSpecialCharacter(value)&& hasNumber(value)? <Checked/>: <Unchecked/>} A number and a unique character</span>
+        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> {value.length >= 8? <Checked bodyFill="#03C161"/>: <Unchecked bodyFill="#6E6E6E"/>} Minimum of 8 characters</span>
+        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> {hasUppercase(value)? <Checked bodyFill="#03C161"/>: <Unchecked bodyFill="#6E6E6E"/>} One UPPERCASE character</span>
+        <span className=" flex items-center font-light mb-[5px] ml-[-5px] "> { hasSpecialCharacter(value)&& hasNumber(value)? <Checked bodyFill="#03C161"/>: <Unchecked bodyFill="#6E6E6E"/>} A number and a unique character</span>
     </div>
     </section>
    
