@@ -1,4 +1,4 @@
-// import { Outlet } from "react-router-dom
+
 import VectorGreen2 from "../assets/ui/VectorGreen2";
 import boxImg from "../assets/images/waltzz.png";
 import Logo from "../assets/ui/Logo";
@@ -19,9 +19,9 @@ const pathName = location.pathname;
 
 
   return (
-    <section className="bg-[#FFF2EF] flex">
-      <div className=" fixed h-screen w-[400px] overflow-hidden  flex flex-col flex-shrink-0">
-        <div className="relative h-[40%] w-full bg-chinese-black">
+    <section className="bg-[#FFF2EF] flex justify-center">
+      <div className=" fixed left-0 h-screen w-[400px] overflow-hidden  flex flex-col  flex-shrink-0">
+        <div className="relative h-[70%] w-full bg-chinese-black">
           <span className="relative z-[30] flex pl-[40px] pt-[40px]">
             <Logo />
           </span>
@@ -45,19 +45,19 @@ const pathName = location.pathname;
           </div>
         </div>
 
-        <div className="relative z-[10] h-[460px] w-full bg-layout-background bg-cover bg-center"></div>
+        <div className="relative  z-[10] h-full w-full bg-layout-background bg-cover bg-center"></div>
       </div>
 
-     <div className=" ml-[400px] w-[1060px] h-screen overflow-scroll flex-shrink"> 
+     <div className=" ml-[400px] w-[1060px]  h-screen overflow-scroll flex-shrink"> 
       <section className="h-[50px] relative pl-[40px] pt-[30px] flex  w-full  ">
         <div className=" flex items-center  ">
           { <ActiveCheck/> }
         <span className=" text-[12px] text-[#6E6E6E]"> Account Type</span>  
         <HorizontalLine/>
-        { pathName === "/"  ?  <Unchecked/>:<ActiveCheck/>   }
+        { pathName === "/"  ?  <Unchecked bodyFill="#6E6E6E"/>:<ActiveCheck/>   }
         <span className=" text-[12px] text-[#6E6E6E]">Personal Details</span> 
         <HorizontalLine/> 
-        {pathName === "/email-verification"?  <ActiveCheck/> : <Unchecked/> }
+        {pathName === "/email-verification"?  <ActiveCheck/> : <Unchecked bodyFill="#6E6E6E"/> }
         <span className=" text-[12px] text-[#6E6E6E]">Email Verification</span> 
         
         </div> 
@@ -70,7 +70,7 @@ const pathName = location.pathname;
         </Link>
       </section>
 
-      <section className="mt-[50px] w-full flex justify-center items-center">
+      <section className=" w-full h-full  flex justify-center items-center">
         <Outlet/>
       </section>
      </div>
